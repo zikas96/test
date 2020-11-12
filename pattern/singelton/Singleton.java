@@ -1,4 +1,4 @@
-package com.company.pattern;
+package pattern.singelton;
 
 public class Singleton {
     private int value = 0;
@@ -18,6 +18,9 @@ public class Singleton {
 
     public static Singleton getInstance()
     {   return INSTANCE;
+    }
+    public int incrementValue(){
+        return ++value;
     }
 
 }
